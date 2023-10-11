@@ -1,0 +1,21 @@
+.MyBorder{
+  border-bottom: 1px black solid
+}
+.MyVerticalAllign{
+  vertical-align: middle;
+}
+
+.pad_one{
+  padding-left: 15px; padding-right: 40px;
+}
+.pad_two{
+  padding-left: 16px;
+}
+
+.text_brek{
+  word-break: break-all;
+}
+
+.promp{
+  height: 43px; width: 43px;
+}

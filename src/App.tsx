@@ -1,24 +1,44 @@
 import React from 'react';
 import logo from './logo.svg';
+import './MyComponent'
+
 import './App.css';
+import ContainerDrawTable from './MyComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
+import pic2 from "./img/info-circle.svg"
+import pic3 from "./img/check-circle.svg"
+import pic4 from "./img/exclamation-triangle.svg"
+
+let obj = {
+  DataState:  [
+      {
+          Subsystem : "Agentless Managment Serice",
+          Status : "Not available",
+          imgSrc : pic2,
+      },
+      {
+          Subsystem : "BIOS/Hardware Health",
+          Status : "ok",
+          imgSrc : pic3,
+      },
+      {
+          Subsystem : "Fan Rendundancy",
+          Status : "Rendundancy",
+          imgSrc : pic3,
+      },
+      {
+        Subsystem : "Network",
+        Status : "Degraded",
+        imgSrc : pic4,
+    }
+  ],
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ContainerDrawTable/>
     </div>
   );
 }
